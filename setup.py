@@ -11,7 +11,7 @@ setup(
     description="A module to get Discord clients' build information.",
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/KaNguy/DiscordBuildInfoPY",
+    url="https://github.com/KaNguy/Discord-Build-Info-PY",
     packages=find_packages(exclude=['tests*']),
     install_requires=['requests'],
     # classifiers=[
