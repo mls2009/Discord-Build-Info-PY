@@ -1,13 +1,13 @@
 # canary import
-from discordbuildinfopy import getCanaryData, printCanaryBuildInfo, writeCanaryDataToFile
+from discord_build_info_py import getCanaryData, printCanaryBuildInfo, writeCanaryDataToFile
 # ptb import
-from discordbuildinfopy import getPTBData, printPTBBuildInfo, writePTBDataToFile
+from discord_build_info_py import getPTBData, printPTBBuildInfo, writePTBDataToFile
 # stable import
-from discordbuildinfopy import getStableData, printStableBuildInfo, writeStableDataToFile
+from discord_build_info_py import getStableData, printStableBuildInfo, writeStableDataToFile
 # general client import
-from discordbuildinfopy import getClientData, printClientData, writeClientDataToLocalFile
+from discord_build_info_py import getClientData, printClientData, writeClientDataToLocalFile
 # universal import
-from discordbuildinfopy import *
+from discord_build_info_py import *
 
 # Canary Tests
 # printCanaryBuildInfo()
