@@ -8,7 +8,8 @@ This module is great for developers who want to quickly retrieve build informati
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the package. Or follow instructions from the module at https://pypi.org/project/discord-build-info-py/
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the package.   
+Or follow instructions from the module at https://pypi.org/project/discord-build-info-py/
 
 ```bash
 pip install discord-build-info-py
