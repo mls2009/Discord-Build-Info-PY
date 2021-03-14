@@ -1,4 +1,4 @@
-import requests
+from urllib.request import Request, urlopen
 import re
 import json
 
@@ -18,25 +18,26 @@ def getClientData(release_channel_args):
         else:
             release_channel = release_channel_args + '.'
 
-    client_request = requests.get(f"https://{release_channel}discord.com/app")
-    # Regex search filter that gets the JS files, possible to this in node.js but not sufficient
+    client_request = (urlopen(Request(f'https://{release_channel}discord.com/app', headers={'User-Agent': 'Mozilla/5.0'})).read()).decode('utf-8')
+
+    # Regex search filter that gets the JS files
     jsFileRegex = re.compile(r'([a-zA-z0-9]+)\.js', re.I)
 
-    # Gets the asset files which are scrambled after every build update, we are always getting the last file name
-    assetFileSearch = jsFileRegex.findall(client_request.text)[-1]
+    # Gets the asset file which are scrambled after every build update, the last file is always fetched from the array
+    asset = jsFileRegex.findall(client_request)[-1]
 
-    assetFileRequests = requests.get(f'https://canary.discord.com/assets/{assetFileSearch}.js')
+    assetFileRequest = (urlopen(Request(f'https://discord.com/assets/{asset}.js', headers={'User-Agent': 'Mozilla/5.0'})).read()).decode('utf-8')
 
     try:
-        jsBuildRegex = re.compile('Build Number: [0-9]+, Version Hash: [A-Za-z0-9]+')
-        canary_build_strings = jsBuildRegex.findall(assetFileRequests.text)[0].replace(' ', '').split(',')
+        build_info_regex = re.compile('Build Number: [0-9]+, Version Hash: [A-Za-z0-9]+')
+        build_info_strings = build_info_regex.findall(assetFileRequest)[0].replace(' ', '').split(',')
     # Error handling
     except (RuntimeError, TypeError, NameError):
-        print('Something went wrong, check the code above as that could be the likely cause.')
+        print(RuntimeError or TypeError or NameError)
 
-    build_num = canary_build_strings[0].split(':')[-1]
+    build_num = build_info_strings[0].split(':')[-1]
 
-    build_hash = canary_build_strings[1].split(':')[-1]
+    build_hash = build_info_strings[1].split(':')[-1]
 
     build_id = build_hash[:7]
 
