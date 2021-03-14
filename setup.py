@@ -5,7 +5,7 @@ with open('README.md', 'r') as readme:
 
 setup(
     name="discord-build-info-py",
-    version="0.0.3",
+    version="0.0.4",
     author="KaNguy",
     # author_email="None",
     description="A module to get Discord clients' build information.",
@@ -13,8 +13,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/KaNguy/Discord-Build-Info-PY",
     packages=find_packages(exclude=['tests*']),
-    install_requires=['requests'],
-    keywords=['DISCORD', 'DISCORD LIBRARY'],
+    keywords=['DISCORD', 'DISCORD LIBRARY', 'DISCORD BUILD', 'HTTP', 'URLLIB', 'REQUEST'],
     license='Apache 2.0',
     # classifiers=[
     #     "Programming Language :: Python :: 3",
