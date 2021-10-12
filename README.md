@@ -79,7 +79,7 @@ print(build_info[0], build_info[1], build_info[2])
 Outputs: **build number**, **build hash**, and **build id** which change every few hours and do not remain the same. 
 
 ## Contributing
-No information at the moment.
+Contributions are welcome, you may submit Pull Requests and Issues—be sure they have a clear goal or objective.
 
 ## License
 [Apache 2.0 License](LICENSE.md)
