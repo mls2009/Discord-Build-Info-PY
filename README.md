@@ -12,8 +12,8 @@
 `Discord Build Info PY` is a Python 3 module capable of getting the build information of the Discord (Talk, Video & Chat) app.
 Discord has 3 mainstream clients: Stable, Canary, PTB (Public Test Build) which all have build information. 
 
-## Why use this?
-This module is great for developers who want to quickly retrieve build information from the Discord clients. Instead of going through the hassle of setting up a file that makes a request and gets the Discord client build information, this module already covers that for you.
+## Usage
+This module quickly retrieves Discord's information for its release channels and provides the data in one single call. It is useful for obtaining the version data and nothing else. This module does not scrape Discord nor its API at all and only returns the data that is needed.
 
 ## Installation
 
@@ -25,8 +25,12 @@ pip install discord-build-info-py
 ```
 
 ## Before you use
-Be aware that the functions that allow you to write data to a file must be used carefully.
-These functions can overwrite data so it is recommended to use a dedicated JSON file per client info that you obtain.
+Be aware that the functions that allow you to write data to a file and must be used carefully.
+These functions can overwrite data, so it is recommended to use a dedicated JSON file for the client info that you obtain.
+
+## Legal
+`Discord-Build-Info-PY` is not affiliated or endorsed by Discord nor its assets.
+Discord is a registered trademark of Discord Inc. and does not own this repository. Discord and Discord Inc's official app & website is found at https://discord.com.
 
 # Documentation
 
@@ -46,7 +50,7 @@ There are three supported release channels which are `canary`, `ptb`, `stable` w
 ### Information retrieval options: 
 1. Declare three variables and assign it to the method with your provided release channel, you can call these individually. 
    1. Example using the **Canary** client: `build_num, build_hash, build_id = getClientData("canary")` 
-      1. Calling an a variable from it: `build_num` —— Calls the build number and that is it.
+      1. Calling a variable from it: `build_num` —— Calls the build number and that is it.
 2. Declare one variable and assign it to the method with your provide release channel, because it will become an array since there are multiple values assigned to one variable, there can only be one variable to be called upon, so indexes must be specified. 
    1. Example using the **Canary** client: `build_info = getClientData("canary)`
       1. Calling it one of the elements: `build_info[0]` —— Calls the build number as it is the first in the index.
@@ -62,7 +66,7 @@ from discord_build_info_py import *
 build_num, build_hash, build_id = getClientData("canary")
 print(build_num, build_hash, build_id) 
 ```
-Outputs: **build number**, **build hash**, and **build id** which change every few hours and do not remain the same always.  
+Outputs: **build number**, **build hash**, and **build id** which change every few hours and do not remain the same.  
 
 
 #### Array-like approach
@@ -72,7 +76,7 @@ from discord_build_info_py import *
 build_info = getClientData("canary")
 print(build_info[0], build_info[1], build_info[2])
 ```
-Outputs: **build number**, **build hash**, and **build id** which change every few hours and do not remain the same always. 
+Outputs: **build number**, **build hash**, and **build id** which change every few hours and do not remain the same. 
 
 ## Contributing
 No information at the moment.
