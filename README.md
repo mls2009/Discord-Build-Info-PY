@@ -81,5 +81,8 @@ Outputs: **build number**, **build hash**, and **build id** which change every f
 ## Contributing
 Contributions are welcome, you may submit Pull Requests and Issues—be sure they have a clear goal or objective.
 
+## Project Status
+Complete. Discontinued.
+
 ## License
 [Apache 2.0 License](LICENSE.md)
