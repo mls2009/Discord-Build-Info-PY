@@ -11,9 +11,10 @@
 
 `Discord Build Info PY` is a Python 3 module made for obtaining the build information of the Discord (Talk, Video & Chat) app.
 Discord has 3 mainstream clients: Stable, Canary, PTB (Public Test Build) which all have build information. 
+  
 
-[**Important Notice**](https://github.com/KaNguy/Discord-Build-Info-PY#project-status)
-
+[**Important Notice**](#project-status)
+  
 
 ## Usage
 This module quickly retrieves Discord's information for its release channels and provides the data in one single call. It is useful for obtaining the version data and nothing else. This module does not scrape Discord nor its API at all and only returns the data that is needed.
