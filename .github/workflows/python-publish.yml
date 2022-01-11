@@ -8,9 +8,13 @@
 
 name: Discord-Build-Info-PY
 
+# on:
+  # release:
+    # types: [published]
+    
 on:
-  release:
-    types: [published]
+  push:
+    branches: [main]
 
 jobs:
   deploy:
