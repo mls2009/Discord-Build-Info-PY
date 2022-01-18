@@ -3,7 +3,7 @@
     <a href="https://pypi.org/project/discord-build-info-py/"><img src="https://img.shields.io/pypi/v/discord-build-info-py.svg" alt="PyPI Package Version" /></a>
     <a href="https://pypistats.org/packages/discord-build-info-py"><img src="https://img.shields.io/pypi/dm/discord-build-info-py?color=1" alt="Downloads Per Month" /></a>
     <a href="https://pypi.org/project/discord-build-info-py/"><img src="https://img.shields.io/pypi/format/discord-build-info-py.svg" alt="PyPI Format" /></a>
-    <a href="LICENSE.md"><img src="https://img.shields.io/github/license/KaNguy/discord-build-info-py?color=007ace" alt="License" /></a>
+    <a href="LICENSE.md"><img src="https://img.shields.io/github/license/KiyonoKara/discord-build-info-py?color=007ace" alt="License" /></a>
   </p>
 </div>
 
