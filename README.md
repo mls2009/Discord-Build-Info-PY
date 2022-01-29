@@ -21,16 +21,14 @@ This module quickly retrieves Discord's information for its release channels and
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the package.   
-Or follow instructions from the module at https://pypi.org/project/discord-build-info-py/
-
+To install the package, you may use:  
 ```bash
-pip install discord-build-info-py
+pip install git+https://github.com/<MAINTAINER>/Discord-Build-Info-PY.git#egg=discord-build-info-py
 ```
 
-## Before you use
-Be aware that the functions that allow you to write data to a file and must be used carefully.
-These functions can overwrite data, so it is recommended to use a dedicated JSON file for the client info that you obtain.
+## Warnings
+- Built-in functions which allow you to write data to files must be used carefully since it can potentially overwrite data—use a separate JSON file for the data.
+- This library purely serves to obtain Discord platform's build number, hash, and ID. 
 
 ## Legal
 `Discord-Build-Info-PY` is not affiliated or endorsed by Discord nor its assets.
@@ -87,7 +85,7 @@ Contributions are closed.
 
 ## Project Status
 Complete. Discontinued.  
-This project and library will continue to be maintained on PyPI and will remain on GitHub. However, it will no longer be subject to further updates and versions since it is discontinued.
+This project and library will remain on GitHub. However, it will no longer be subject to further updates and versions since it is discontinued. __This project is no longer maintained on PyPI.__
 
 ## License
 [Apache 2.0 License](LICENSE.md)
