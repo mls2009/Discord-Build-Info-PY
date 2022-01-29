@@ -1,6 +1,6 @@
 <div align="center">
   <p>
-    <a href="https://github.com/KiyonoKara/Discord-Build-Info-PY/releases"><img src="img.shields.io/github/v/release/KiyonoKara/discord-build-info-py?display_name=tag&sort=semver" alt="Version" /></a>
+    <a href="https://github.com/KiyonoKara/Discord-Build-Info-PY/releases"><img src="https://img.shields.io/github/v/release/KiyonoKara/discord-build-info-py?display_name=tag&sort=semver" alt="Version" /></a>
     <a href="LICENSE.md"><img src="https://img.shields.io/github/license/KiyonoKara/discord-build-info-py?color=007ace" alt="License" /></a>
   </p>
 </div>
