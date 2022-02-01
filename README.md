@@ -21,7 +21,7 @@ This module quickly retrieves Discord's information for its release channels and
 
 To install the package, you may use:  
 ```bash
-pip install git+https://github.com/<MAINTAINER>/Discord-Build-Info-PY.git#egg=discord-build-info-py
+pip install git+https://github.com/<MAINTAINER>/Discord-Build-Info-PY.git#egg=discord_build_info_py
 ```
 
 ## Warnings
